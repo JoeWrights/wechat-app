@@ -1,0 +1,25 @@
+.flex-warp{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+.flex-item{
+    /* 750px */
+    width: 700rpx;  /*可以忽略所有设备差别*/
+    height: 200rpx;
+    text-align: center;
+    line-height: 200rpx;
+    color:#fff;
+}
+.bc_green{
+    background-color: green;
+}
+.bc_red{
+    background-color: #f00;
+    align-self: flex-end;
+}
+.bc_blue{
+    background-color: #00f;
+}
