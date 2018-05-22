@@ -1,4 +1,8 @@
 .action{
     text-align: center;
     padding: 48rpx;
+    margin-top: 48rpx;
+}
+.action .description{
+    margin-bottom: 48rpx;
 }

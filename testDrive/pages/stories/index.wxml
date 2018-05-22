@@ -1,0 +1,16 @@
+<view class="card">
+    <view class="card" hover-class="hover" wx:for="{{entities}}" wx:key="id">
+        <video src="{{item.video}}" poster=
+        "{{item.image}}" objectFit="cover" duration="{{item.duration_raw}}" hidden="{{currentVid!=item.id}}"/>
+        <image src="{{item.image}}" mode="aspectFill" hidden="{{currentVid==item.id}}" data-vid="{{item.id}}" bindplay="play" bindtap="showVideo">
+            <view class="label">{{item.duration}}</view>
+        </image>
+        <navigator hover-class="none" url="./show?id={{item.id}}">
+            <view class="content">
+                <view class="header">{{item.header}}</view>
+                <view class="description">{{item.description}}</view>
+            </view>
+        </navigator>
+    </view>
+</view>
+
